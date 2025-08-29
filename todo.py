@@ -8,14 +8,22 @@ def add_task(task):
     tasks.append(task)
 
 # Step 3: View tasks
+def view_tasks():
+    for i, task in enumerate(tasks, start="1"):
+        print(f"{i}, {tasks}")
 
 # Step 4: Delete a task
-
+def delete(location, task):
+    task.pop(location, task)
 
 # Step 5: Mark task complete
+def mark_complete(location, tassk):
+    tasks[location] += "👍"
 
 
 # Step 6: Save/load tasks (extra stretch for today)
+
+
 
 
 # Demo flow (you can run this file directly: python todo.py)
@@ -25,4 +33,4 @@ if __name__ == "__main__":
     view_tasks()
     mark_complete(0)
     view_tasks()
-    save_tasks()
+    #save_tasks()
