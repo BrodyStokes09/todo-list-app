@@ -20,17 +20,13 @@ def delete(location, task):
 def mark_complete(location, tasks):
     tasks[location] += "👍"
 
-
 # Step 6: Save/load tasks (extra stretch for today)
-
-
 
 
 # Demo flow (you can run this file directly: python todo.py)
 if __name__ == "__main__":
     add_task("Finish Cyber 201 assignment")
     add_task("Push code to GitHub")
-    view_tasks()
     mark_complete(0, tasks)
     view_tasks()
     #save_tasks()
